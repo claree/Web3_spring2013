@@ -1,0 +1,118 @@
+/*==================FIXES=====================*/
+header, footer, aside, nav, section, article, hgroup, div{
+display:block;
+}
+/* change box sizing model to force width and height measure to include padding and border (learn more at: http://paulirish.com/2012/box-sizing-border-box-ftw/ and at: http://html5please.com/ ) Note: breaks min-height, max-height in Firefox. */
+
+* { 
+	-moz-box-sizing: border-box; /* Firexfox */
+	-webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+	box-sizing: border-box; /* IE */
+}
+
+/* clear class prevents parents with floating children from collapsing */
+
+.clear:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+/*==================END FIXES=====================*/
+body{  width: 100%; height: 100%; margin: 0 ; padding: 0;}
+
+.header h1, h2{
+margin: 0 auto;
+color:black;
+text-align: center;
+}
+
+h3{
+text-align:center;
+background-color: #D8D8D8;
+padding-right: 10px;
+}
+
+h4{
+color:#D8D8D8;
+font-size: 15 px;
+display: inline;
+}
+
+h5{
+color:black;
+font-size: 13 px;
+display: inline;
+padding-bottom:3px;
+
+
+}
+
+article{
+width: 14%;
+height: 300px;
+display:block;
+float:left;
+background-color: #207178;
+padding-left: 10px;
+
+
+}
+
+.day{
+background-color:red;
+display:block;
+}
+
+
+
+article.Monday{
+background-color:#3879D9;
+
+}
+
+.Tuesday{
+background-color: #174C4F;
+color:black;
+width:14%;
+float:left;
+height:300px;
+}
+.wednesday{
+background-color: #207178;
+color:black;
+width:14%;
+float:left;
+height:300px;
+}
+.thursday{
+background-color: #FF9666;
+width:14%;
+float:left;
+height:300px;
+}
+
+.friday{
+background-color: #FFE184;
+width:14%;
+float:left;
+height:300px;
+
+}
+
+.saturday{
+background-color: #F5E9BE;
+width:14%;
+float:left;
+height:300px;
+}
+.sunday{
+background-color: #67617A;
+width:14%;
+float:left;
+height:300px;
+}
+*/
+

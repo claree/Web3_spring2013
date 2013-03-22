@@ -1,0 +1,116 @@
+/*=================css3 @fontface====================*/
+
+@font-face {
+	font-family: "gram";
+	scr: url(../fonts/gram.ttf);
+}
+@font-face {
+	font-family: "Gram italic";
+	scr: url(../fonts/Gram italic c.ttf);
+}
+/*==================FIXES=====================*/
+header, footer, aside, nav, section, article, hgroup, div{
+display:block;
+}
+/* change box sizing model to force width and height measure to include padding and border (learn more at: http://paulirish.com/2012/box-sizing-border-box-ftw/ and at: http://html5please.com/ ) Note: breaks min-height, max-height in Firefox. */
+
+* { 
+	-moz-box-sizing: border-box; /* Firexfox */
+	-webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+	box-sizing: border-box; /* IE */
+}
+
+/* clear class prevents parents with floating children from collapsing */
+
+.clear:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+
+/*====================Page Content========================= */
+body{
+width: 100%; 
+height: 120%; 
+font-family: "Libre Baskerville", serif;
+/*font-family: "gram", Helvetica, sans-serif;*/
+color:#DA405E;
+
+}
+
+#wrapper{
+width: 80%; /*960px;*/
+margin: 0 auto; 
+background: white;/*#ebebeb;*/ 
+height: 65em;
+
+}
+
+
+h1{
+
+font-size: 36px;
+font-weight: 700; 
+padding: 20px 0 30px 0;
+color: #DA405E;
+}
+
+p#intro{
+font-size: 14px;
+font-weight: 400;
+padding: 20px 10px 30px 10px;
+color:#5D1A25;
+}
+
+li{
+padding-left: 30px;
+
+}
+
+h2{
+
+font-size: 22px;
+font-weight: 700; 
+padding: 20px 10px 30px 10px;
+color:#FF5678;
+}
+
+
+
+.stuff{
+font-size: 16px;
+font-weight: 400; 
+color:#5D1A25;
+
+}
+.steps{
+font-size: 16px;
+font-weight: 400; 
+color:#5D1A25;
+padding-left:10px;
+}
+
+
+.stepsDetails{
+font-size: 16px;
+font-weight: 400;
+padding-left:20px;
+color: #DA405E;
+}
+
+.stepsDetails2{
+font-size: 16px;
+font-weight: 400;
+color: grey;
+padding-left:15px;
+color:#877B7E;
+padding-left:30px;
+}
+
+img{
+padding: 5px 0 15px 30px;
+}
