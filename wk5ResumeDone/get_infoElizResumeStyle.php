@@ -9,7 +9,8 @@
 
 	//pull content from another page
 	//$content = file_get_contents('http://localhost/wk5/give_infoElizResume.php?request=animals');
-	$content= file_get_contents('http://localhost/JSONgive_infoElizResume.php');
+	//$content= file_get_contents('http://localhost/JSONgive_infoElizResume.php');
+	$content= file_get_contents('http://localhost/wk5ResumeDone/JSONgive_infoElizResume.php');
 	//echo $content;	
 
 	$formatted_content = json_decode($content,true);
