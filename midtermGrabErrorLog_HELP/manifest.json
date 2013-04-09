@@ -1,0 +1,17 @@
+{
+  "name": "Typed URL History",
+  "version": "1.1",
+  "description": "Reads your history, and shows the top ten pages you go to by typing the URL.",
+  "permissions": ["history", "tabs"],
+  "content_security_policy": "script-src 'self' http://localhost; object-src 'self'",
+  "browser_action": {
+    "default_popup": "typedUrls.html",
+    "default_icon": "clock.png"
+  },
+  
+  "content_scripts":[{
+  		"js": ["jquery.js", "typedUrls.js"],
+  		"matches": ["http://*/*", "https://*/*"]
+  }],
+  "manifest_version": 2
+}
